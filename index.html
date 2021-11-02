@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>Emmad Kashmiri</title>
+	</head>
+
+	<body>
+		<h1> Emmad Kashmiri. My favorite hobby is going around the city with my friends. </h1>
+
+		<script> 
+
+			//this was my first time using html and javascript (and at the same time), I couldn't figure out how to bring the code written here into the html file.
+
+			function timeTeller(){
+
+			let millis = 0; //milliseconds
+
+			const day = new Date();
+			
+			let hour = day.getHours();
+			
+			let minutes = day.getMinutes();
+			if(minutes < 10) {  //if its less than 10 mins it adds a 0
+				minutes = "0" + minutes;
+			}
+
+			let seconds = today.getSeconds(); 
+			if(seconds < 10) {  //if its less than 10 seconds it adds a 0
+				seconds = "0" + seconds;
+			}
+
+			while(millis < 1000){ //milliseconds will start the loop, once it reaches 1000, a seconds begins
+				millis++;
+				if(millis = 1000){
+					seconds = 1;
+					millis = 0;
+				}
+			}
+				while(seconds < 60){
+					if(seconds = 60){
+						minutes = 1;
+						seconds = 0;
+					}
+				}
+				while(minutes < 60){
+					if(minutes = 60){
+						hours = 1;
+						minutes = 60;
+					}
+				}
+
+				while(hours < 12){
+					if(hours = 12){
+						hours = 0;
+						minutes = 0;
+						seconds = 0;
+						millis = 0;
+					}
+				}
+				
+			 console.log(day.hour + ":" + day.minutes + ":" + day.seconds);
+		}
+		</script>
+
+	</body>
+
+</html>
